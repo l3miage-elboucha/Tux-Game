@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XmlSchema.xsd to edit this template
+-->
+
+<xs:schema 
+        version="1.0" 
+        targetNamespace="http://myGame/tux"
+        xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+        xmlns:tux="http://myGame/tux"  
+        elementFormDefault="qualified">
+
+<!-- ..............TYPE profil.............. -->
+<xs:element name="profil" type="tux:Profil"/>
+<xs:complexType name="Profil">
+<!--  ........... RESTE DU TYPE ......  -->
+    <xs:sequence>
+        <xs:element name="nom" type="xs:string" />
+        <xs:element name="avatar" type="xs:string" />
+        <xs:element name="anniversaire" type="xs:date" />
+        <xs:element name="parties" type="tux:Parties" />
+    </xs:sequence>
+</xs:complexType>
+<!--  ........... AUTRES TYPES ..........  -->
+<!--...........Parties..............-->
+<xs:complexType name="Parties">
+    <xs:sequence>
+        <xs:element name="partie" type="tux:Partie" minOccurs ="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+</xs:complexType>
+
+<!-- ...........Partie..............-->
+<xs:complexType name="Partie">
+    <xs:sequence>
+        <xs:element name="temps" type="xs:double" minOccurs="0" maxOccurs="1"/>
+        <xs:element name="niveau" type="tux:NiveauProfil" minOccurs="1" maxOccurs="1"/>
+    </xs:sequence>
+    <xs:attribute name="date" type="xs:date" use="required"/>
+    <xs:attribute name="trouvé" type="xs:string" use="optional"/>
+</xs:complexType>
+
+<!-- ...........Niveau.............-->
+<xs:complexType name="NiveauProfil">
+    <xs:sequence>
+        <xs:element name="mot" type="xs:string" minOccurs="1" maxOccurs="1"/>
+    </xs:sequence>
+    <xs:attribute name="difficulte" type="xs:string" use="required"/>
+</xs:complexType>
+
+</xs:schema>
+
+

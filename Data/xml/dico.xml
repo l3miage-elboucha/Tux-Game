@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this template
+-->
+
+
+
+<tux:dictionnaire
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xmlns:tux="http://myGame/dico"
+    xsi:schemaLocation='http://myGame/dico ../xsd/dico.xsd'>
+    <tux:niveau difficulte="1">
+        <tux:mot>OUI</tux:mot>
+        <tux:mot>NON</tux:mot>
+        <tux:mot>DON</tux:mot>
+        <tux:mot>JEU</tux:mot>
+        <tux:mot>PAS</tux:mot>
+        <tux:mot>RUE</tux:mot>
+        <tux:mot>MOT</tux:mot>
+        <tux:mot>SAC</tux:mot>
+        <tux:mot>SEL</tux:mot>
+        <tux:mot>CAS</tux:mot>
+    </tux:niveau>
+    <tux:niveau difficulte="2">
+        <tux:mot>FUME</tux:mot>
+        <tux:mot>FILE</tux:mot>
+        <tux:mot>CHEZ</tux:mot>
+        <tux:mot>CHER</tux:mot>
+        <tux:mot>FACE</tux:mot>
+        <tux:mot>LION</tux:mot>
+        <tux:mot>CHAT</tux:mot>
+        <tux:mot>GRAS</tux:mot>
+        <tux:mot>DANS</tux:mot>
+        <tux:mot>GROS</tux:mot>
+    </tux:niveau>
+    <tux:niveau difficulte="3">
+        <tux:mot>AINSI</tux:mot>
+        <tux:mot>UTILE</tux:mot>
+        <tux:mot>TUILE</tux:mot>
+        <tux:mot>AVRIL</tux:mot>
+        <tux:mot>BORNE</tux:mot>
+        <tux:mot>BELLE</tux:mot>
+        <tux:mot>CHIEN</tux:mot>
+        <tux:mot>SOUPE</tux:mot>
+        <tux:mot>VASTE</tux:mot>
+        <tux:mot>ULTRA</tux:mot>
+    </tux:niveau>
+    <tux:niveau difficulte="4">
+        <tux:mot>AGENDA</tux:mot>
+        <tux:mot>ACTION</tux:mot>
+        <tux:mot>BEURRE</tux:mot>
+        <tux:mot>CLOCHE</tux:mot>
+        <tux:mot>CAMION</tux:mot>
+        <tux:mot>EMOTTE</tux:mot>
+        <tux:mot>GALOPS</tux:mot>
+        <tux:mot>ZENITH</tux:mot>
+        <tux:mot>TOISON</tux:mot>
+        <tux:mot>SYLPHE</tux:mot>
+    </tux:niveau>
+    <tux:niveau difficulte="5">
+        <tux:mot>CONSTITUTION</tux:mot>
+        <tux:mot>ZODIAQUE</tux:mot>
+        <tux:mot>CAPRICORNE</tux:mot>
+        <tux:mot>EVENTUELLEMENT</tux:mot>
+        <tux:mot>DROMADAIRE</tux:mot>
+        <tux:mot>HIPPOPOTAME</tux:mot>
+        <tux:mot>COCCINELLE</tux:mot>
+        <tux:mot>MAQUEREAU</tux:mot>
+        <tux:mot>SERPENTEAU</tux:mot>
+        <tux:mot>DISPENDIEUX</tux:mot>
+    </tux:niveau>
+
+</tux:dictionnaire>

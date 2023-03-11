@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XmlSchema.xsd to edit this template
+-->
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:tux="http://myGame/dico" 
+           targetNamespace="http://myGame/dico"
+           elementFormDefault="qualified">
+    
+    
+    
+    <!-- Ici on déclare la racine: dictionnaire-->
+    <xs:element name="dictionnaire" type="tux:Dictionnaire"/>
+    
+    <!--..............Dictionnaire...............-->
+    <xs:complexType name="Dictionnaire">
+        <xs:sequence>
+            <xs:element name="niveau" type="tux:Niveau" minOccurs="5" maxOccurs="5"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <!--..............Niveau...............-->
+    <xs:complexType name="Niveau">
+        <xs:sequence>
+            <xs:element name="mot" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute  name="difficulte" type="xs:int"/>
+    </xs:complexType>
+
+</xs:schema>
